@@ -43,6 +43,12 @@ update adds packages with native code** (`path_provider`, `share_plus`,
 If you'd already run `flutter create .` on a previous version of this
 project, just run `flutter pub get` again — no need to redo step 1.
 
+## CI
+
+The repository includes a GitHub Actions workflow (`.github/workflows/flutter_ci.yml`)
+that runs `flutter analyze` and `flutter test` on every push. It runs on
+GitHub's runners, so it needs no local setup — just push to any branch.
+
 ## Project structure
 ```
 lib/
